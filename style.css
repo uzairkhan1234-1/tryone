@@ -10,11 +10,35 @@ nav{
    justify-content: space-between;
     background-color: yellowgreen;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 nav ul{
     font-size: 20px;
+
     display: flex;
     gap: 30px;
     list-style-type: none;
+}
+nav .fa-bars{
+    font-size: 2rem;
+    display: none;
+}
+@media screen and (max-width:419px) {
+    nav h1{
+        margin-bottom: 10px;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* nav ul li{
+        margin: 20px 0 ;
+    } */
+    nav .fa-bars{
+        
+        display: block ;
+    }
+
 }
